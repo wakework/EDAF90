@@ -44,7 +44,7 @@ class App extends Component {
         <Route path="" element={
           <div className="continer col-12">
             <div className="row h-200 p-5 bg-light border rounded-3">
-              <h1>Välkommen till Stellas Salladsbar!</h1>
+              <h1>Välkommen till Salladsbar!</h1>
               </div>
           </div>
           } />
