@@ -1,0 +1,21 @@
+<div id="page">
+  <mat-form-field class="example-form-field" appearance="fill">
+    <mat-label>Search</mat-label>
+    <input #searchInput matInput class="search-bar" type="search" placeholder="Search for a movie..." (keydown.enter)="onSearch(searchInput.value)">
+    <button (click)="onSearch(searchInput.value)" matSuffix mat-icon-button aria-label="Search" type="button">
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+
+<div>
+  <mat-grid-list class="full-grid" cols="4" rowHeight="430px">
+    <div #searchOutput *ngFor="let searchOption of movies">
+      <mat-grid-tile>
+          <a class="example-card" routerLink="/movie-information/{{searchOption.Title}}" routerLinkActive="active">
+            <img mat-card-lg-image class="img" src={{searchOption.Poster}}>
+          </a>
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
+</div>

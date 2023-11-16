@@ -1,0 +1,31 @@
+
+  <mat-toolbar>
+    <span>Watchlist</span>
+    <span class="button-right"></span>
+    <div>
+      <button mat-flat-button (click)="handleClear()">
+        Clear
+        <mat-icon>clear</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+
+    <mat-nav-list role="list">
+      <div role="listitem" *ngFor="let item of watch">
+
+          <a mat-list-item style="height: 85px" class="list-item" routerLink="/movie-information/{{item.Title}}" routerLinkActive="active">
+            <img class="img" mat-card-sm-image src={{item.Poster}}>
+            <h2 class="title">
+              {{item.Title}}
+            </h2>
+          </a>
+
+          <!-- Fixa så att knapp till höger
+
+          <button mat-button class="button" (click)="handleButton(item)">
+            <mat-icon>{{viewButton(item, 'icon')}}</mat-icon>
+            {{viewButton(item, 'button')}}
+          </button> -->
+
+      </div>
+    </mat-nav-list>

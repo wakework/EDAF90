@@ -1,0 +1,26 @@
+  .img {
+    float: left;
+    width: auto;
+    max-width: 55px;
+    margin-left: 10px;
+  }
+
+  .title {
+    margin-top:22px;
+    float: left;
+    margin-left: 26px;
+  }
+
+  .list-item {
+    margin-bottom: 20px;
+  }
+
+  .button-right {
+    flex: 1 1 auto;
+  }
+
+  .button {
+    margin-top: 22px;
+    margin-right: 10px;
+    float: right;
+  }

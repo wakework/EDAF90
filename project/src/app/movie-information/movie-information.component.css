@@ -1,0 +1,20 @@
+.block{
+  float: left;
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+.img {
+  margin-left: 10px;
+  float: right;
+  height: auto;
+  min-width: 240px;
+  max-width: 240px;
+}
+
+.buttons {
+  float: center;
+  margin-top: 10px;
+  margin-left: 3%;
+}

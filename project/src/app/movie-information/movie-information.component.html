@@ -1,0 +1,68 @@
+<div class="block">
+  <div>
+    <img mat-card-lg-image class="img" src="{{info.Poster}}">
+  </div>
+
+  <div>
+    <h1>{{info.Title}}</h1>
+  </div>
+
+  <div>
+    {{info.Plot}}
+  </div><br>
+
+  <div>
+    <div>
+      <strong>Actors: </strong>
+      {{info.Actors}}
+    </div>
+
+    <div>
+      <strong>Directors: </strong>
+      {{info.Director}}
+    </div>
+
+    <div>
+      <strong>Genre: </strong>
+      {{info.Genre}}
+    </div>
+
+    <div>
+      <strong>Runtime: </strong>
+      {{info.Runtime}}
+    </div>
+
+    <div>
+      <strong>Released: </strong>
+      {{info.Released}}
+    </div>
+  </div>
+
+  <div>
+    <strong>BoxOffice: </strong>
+    {{info.BoxOffice}}
+  </div><br>
+
+  <div>
+    <h3>
+      <strong>Critics</strong>
+    </h3>
+    <strong>Imdb: </strong>
+    {{info.imdbRating}}
+
+    <strong>Metascore: </strong>
+    {{info.Metascore}}
+  </div><br>
+</div>
+
+<div class="buttons">
+    <button mat-button (click)="handleButton(info)">
+      <mat-icon>{{viewButton(info, 'icon')}}</mat-icon>
+      {{viewButton(info, 'button')}}
+    </button>
+
+    <a mat-button routerLink="/watchlist" routerLinkActive="active">
+      <mat-icon>add_to_queue</mat-icon>
+      Your Watchlist ->
+    </a>
+</div>
